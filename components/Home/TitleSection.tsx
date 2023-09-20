@@ -2,14 +2,14 @@ import Image from 'next/image';
 
 export default function TitleSection() {
   return (
-    <div className="relative  mx-auto max-w-[1600px] px-4 md:px-14 flex justify-between h-[90vh] md:h-[70vh] pb-10 -z-50">
-      <div className="flex flex-col items-center w-full mt-[1.2rem] md:-mt-2 lg:mt-0 md:px-10 lg:px-12  gap-7  md:w-1/2 md:items-start">
-        <h1 className="w-full text-center md:text-[40px] lg:text-5xl md:text-right">
+    <div className="relative mx-auto max-w-[1600px] md:pr-24 flex justify-between pt-0 px-[40px] pb-10">
+      <div className="z-0 flex flex-col items-center w-full mt-[1.2rem] md:-mt-2 lg:mt-0 md:px-10 lg:px-12 gap-8 md:w-1/2 md:items-start">
+        <h1 className="w-full text-center md:text-[40px] lg:text-5xl md:text-right leading-[1.2] md:leading-normal">
           קהילת מעקף&nbsp;-
           <br />
           קוד פתוח ישראל
         </h1>
-        <h4 className="w-full text-center md:text-right">
+        <h4 className="w-full text-center md:text-right font-medium">
           מטרת הקהילה היא חיבור
           <br />
           בין מפתחים ישראלים המעוניינים
@@ -37,12 +37,12 @@ export default function TitleSection() {
           />
         </a>
       </div>
-      <div className="absolute lg:min-h-[800px] xl:w-[650px] top-0 left-0 w-full h-full -z-10 md:z-0 opacity-40 md:w-1/2 md:min-h-screen md:opacity-100 md:static">
+      <div className="absolute top-0 md:top-8 left-0 lg:min-h-[800px] xl:w-[650px] w-full h-full opacity-50 md:w-1/2 md:h-full  md:opacity-100 -z-10 px-[20px] md:pl-24">
         <div
           className={
-            'bg-[url("/images/skeleton_loader.png")] dark:bg-[url("/images/skeleton_loader_dark.png")] w-full h-full bg-top bg-no-repeat bg-contain '
+            'bg-[url("/images/skeleton_loader.png")] dark:bg-[url("/images/skeleton_loader_dark.png")] w-full h-full bg-top bg-no-repeat bg-contain md:bg-contain'
           }
-        />
+        ></div>
       </div>
     </div>
   );
